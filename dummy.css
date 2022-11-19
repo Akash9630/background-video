@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+section#video-background {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+section#video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section#video-background .headline {
+  z-index: 2;
+  padding: 0 2rem;
+}
+section#video-background .headline h1 {
+  color: white;
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+
+section#video-background .headline button {
+  padding: 1rem;
+  color: black;
+  font-weight: 900;
+  font-size: 1.5rem;
+  border: 0;
+  outline: 0;
+}
+
+section#info {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+section#info p {
+  margin: 6rem 0;
+}
+
+/* @media (min-aspect-ratio: 16/9) {
+  section#video-background video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  section#video-background video {
+    width: auto;
+    height: 100%;
+  }
+} */
+section#video-background .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(99, 98, 98, 0.6),
+    rgba(0, 0, 0, 1)
+  );
+}
+
+/* @media (max-width: 400px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+section#video-background video {
+  display: none;
+}
+
+section#video-background {
+  background-image: url(mountains.webp.webp);
+  background-size: cover;
+} */

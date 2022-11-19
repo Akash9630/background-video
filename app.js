@@ -1,7 +1,7 @@
 const options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.25,
+    threshold: 0.48,
 }
 
 const callback = (entries, observer) => {
@@ -12,7 +12,7 @@ const callback = (entries, observer) => {
     } else {
         videoObserver.target.pause();
     }
-}
+};
 
 const observer = new IntersectionObserver(callback, options);
-observer.observer(document.querySelector("vieo"));
+observer.observe(document.querySelector("video"));

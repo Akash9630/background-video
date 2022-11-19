@@ -70,13 +70,12 @@ section#video-background .overlay {
   html {
     font-size: 70%;
   }
-}
+  section#video-background video {
+    display: none;
+  }
 
-/* section#video-background video {
-  display: none;
+  section#video-background {
+    background-image: url(mountains.webp);
+    background-size: cover;
+  }
 }
-
-section#video-background {
-  background-image: url(mountains.webp);
-  background-size: cover;
-} */
